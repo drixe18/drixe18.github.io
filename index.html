@@ -1,0 +1,45 @@
+<html>
+   <head>
+      <!-- TensorFlow.js script -->
+      <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.3.0/dist/tf.min.js"></script>
+      <style>
+         .row {
+         display: flex;
+         text-align: center;
+         }
+         .column {
+         flex: 50%;
+         margin: auto;
+         vertical-align: middle;
+         }
+      </style>
+   </head>
+   <body>
+      <h2 align="center">
+      Portrait Segmentation </h1>
+      <!-- Divide the screen -->
+      <div class="row" >
+         <!-- Inputs -->
+         <div class="column" >
+            <h3>Input Video</h3>
+            <!-- HTML Video-->
+            <video autoplay playsinline muted id="webcam" width="300" height="400" poster="loading.gif"></video>
+         </div>
+         <!-- Outputs -->
+         <div class="column" >
+            <h3>Output Video</h3>
+            <!-- HTML Canvas -->
+            <br>
+            <button  id="start">Start</button>
+            <button  id="stop">Stop</button>
+            <br><br><br>
+            <canvas  width=224 height=224 id="mycanvas" crossorigin="anonymous"></canvas>
+            <br><br><br>
+            </a>
+         </div>
+      </div>
+   </body>
+   <!-- Main script -->
+   <script src = "script.js" > </script>
+</html>
+
